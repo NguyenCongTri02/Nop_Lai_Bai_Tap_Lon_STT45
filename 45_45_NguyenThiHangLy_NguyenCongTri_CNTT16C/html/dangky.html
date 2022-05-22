@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styledangki.css">
+    <link href="//theme.hstatic.net/1000185342/1000830674/14/plugin-style.css?v=20" rel="preload stylesheet" as="style" type="text/css">
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+  </style>
+  <script>
+      function checkEmail() { 
+        var email = document.getElementById('email'); 
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+        if (!filter.test(email.value)) { 
+                 alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+                 email.focus; 
+                 return false; 
+        }
+        else{ 
+                 alert; 
+        } 
+    } 
+    function kiemTraPass() {
+        var pass= document.getElementById('ps1');
+        var re= /(?=.*\d).{6,}/;
+        if(!re.test(pass.value)){
+            alert('Mật khẩu phải có chữ, số, ít nhất 6 kí tự');
+            pass.focus;
+            return false;
+        } else
+        {
+            alert;
+        }
+    }
+    function xacNhanPass() {
+        if(document.getElementById('ps2').value != document.getElementById('ps1').value)
+        {
+            alert('Phải trùng với mật khẩu đã nhập ở trên');
+            return false
+        } else
+        {
+            alert;
+  
+        }
+    }
+    </script>
+</head>
+
+<body>
+  <header id="header" class="site-header">
+    <div id="site-header-center">
+        <div class="container">
+            <div class="row-left-list d-flex d-flex-center">
+
+                <div class="logo col-md-2 col-xs-6 col-sm-4 pd-right-0">
+                    <a href="trangchu.html">
+                        <img class="dt-width-auto" height="50" width="185" src="/img/logo.png" alt="trilishop">
+                    </a>
+                </div>
+                <nav class="col-md-8 hidden-xs hidden-sm pd-right-0">
+                    <ul id="menu-desktop" class="menu-desk">
+
+                        <li class="active "> 
+                            <a href="trangchu.html"> Trang chủ</a>   
+                        </li>
+                        <li class=" mega-menu"> 
+                            <a href=""> Giới thiệu<i class="fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="mega-menu-wrap">
+                                <div class="menu-mega-inner">
+                                    
+                                    <div class="item-mega-menu">
+                                        <div class="hd-title-menu"> 
+                                            <a href="gioithieuCH.html">Cửa hàng</a>
+                                        </div> 
+                                    </div>
+                        
+                                    <div class="item-mega-menu">
+                                        <div class="hd-title-menu"> 
+                                            <a href="thanhvien.html">Thành viên</a>
+                                        </div> 
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class=" "> 
+                            <a href="dsSanpham.html">Sản phẩm</a>
+                            
+                        </li>
+                        <li>
+                            <a href="sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-md-2 group-icon-header col-xs-3 col-sm-4 pd-right-0 pd-0-mb">
+                    <div class="cart-login-search align-items-center"> 
+                        <ul class="list-inline list-unstyled mb-0">
+                            <li class="list-inline-item mr-0">
+                                <a href="#" class="search js-search-desktop" data-original-title="Tìm kiếm" data-tooltip="tooltip">
+                                    <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/searcg-icon.svg?v=20" alt="Tìm kiếm">
+                                </a>              
+                            </li> 
+                            <li class="list-inline-item mr-0 hidden-xs hidden-sm">
+                                <a href="dangnhap.html" data-original-title="Đăng nhập" class="login" data-tooltip="tooltip">
+                                    <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/user-account.svg?v=20" alt="Tài khoản">
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-0">
+                                <a href="#" data-original-title="Danh sách yêu thích" class="login" data-tooltip="tooltip">
+                                    <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/heart.svg?v=20" alt="Danh sách yêu thích">
+                                    <span class="js-number-like number-like">0</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-0">
+                                <a href="#" class="cart js-call-minicart" data-original-title="Giỏ hàng" data-tooltip="tooltip">
+                                    <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/shopping-cart.svg?v=20" alt="Giỏ hàng">
+                                    <span class="js-number-cart number-cart">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div>
+    <form action="" >
+        <div class="content">
+          <h1>Đăng Ký</h1>
+          <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
+          <hr>
+         <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Nhập Email" name="email" id="email" onblur="checkEmail()" required>
+         <label for="ps1"><b>Mật Khẩu</b></label>
+          <input type="password" placeholder="Nhập Mật Khẩu" name="pw1" id="ps1" onblur="kiemTraPass()" required>
+         <label for="psw-repeat"><b>Nhập Lại Mật Khẩu</b></label>
+          <input type="password" placeholder="Nhập Lại Mật Khẩu" name="pw2" id="ps2" onblur="xacNhanPass()"  onChange="checkPasswordMatch();" required>
+         <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Nhớ tài Khoản
+          </label>
+         <div class="clearfix">
+            <button type="submit" class="signupbtn"   ><a href="dangnhap.html"   style="text-decoration: none;">Sign Up</a></button>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>

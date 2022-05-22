@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="../js/bootstrap.min.css">
+    <script src="../js/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="/css/styleTrangChu.css">
+    <link href="//theme.hstatic.net/1000185342/1000830674/14/plugin-style.css?v=20" rel="preload stylesheet" as="style" type="text/css">
+</head>
+
+<body>
+    <header id="header" class="site-header">
+        <div id="site-header-center">
+            <div class="container">
+                <div class="row-left-list d-flex d-flex-center">
+   
+                    <div class="logo col-md-2 col-xs-6 col-sm-4 pd-right-0">
+                        <a href="trangchu.html">
+                            <img class="dt-width-auto" height="50" width="185" src="/img/logo.png" alt="trilishop">
+                        </a>
+                    </div>
+                    <nav class="col-md-8 hidden-xs hidden-sm pd-right-0">
+                        <ul id="menu-desktop" class="menu-desk">
+
+                            <li class="active "> 
+                                <a href="trangchu.html"> Trang chủ</a>   
+                            </li>
+                            <li class=" mega-menu"> 
+                                <a href=""> Giới thiệu<i class="fa-chevron-down" aria-hidden="true"></i></a>
+                                <div class="mega-menu-wrap">
+                                    <div class="menu-mega-inner">
+                                        
+                                        <div class="item-mega-menu">
+                                            <div class="hd-title-menu"> 
+                                                <a href="gioithieuCH.html">Cửa hàng</a>
+                                            </div> 
+                                        </div>
+                            
+                                        <div class="item-mega-menu">
+                                            <div class="hd-title-menu"> 
+                                                <a href="thanhvien.html">Thành viên</a>
+                                            </div> 
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" "> 
+                                <a href="dsSanpham.html">Sản phẩm</a>
+                                
+                            </li>
+                            <li>
+                                <a href="sitemap.html">Sitemap</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-md-2 group-icon-header col-xs-3 col-sm-4 pd-right-0 pd-0-mb">
+                        <div class="cart-login-search align-items-center"> 
+                            <ul class="list-inline list-unstyled mb-0">
+                                <li class="list-inline-item mr-0">
+                                    <a href="#" class="search js-search-desktop" data-original-title="Tìm kiếm" data-tooltip="tooltip">
+                                        <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/searcg-icon.svg?v=20" alt="Tìm kiếm">
+                                    </a>              
+                                </li> 
+                                <li class="list-inline-item mr-0 hidden-xs hidden-sm">
+                                    <a href="dangnhap.html" data-original-title="Đăng nhập" class="login" data-tooltip="tooltip">
+                                        <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/user-account.svg?v=20" alt="Tài khoản">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <a href="#" data-original-title="Danh sách yêu thích" class="login" data-tooltip="tooltip">
+                                        <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/heart.svg?v=20" alt="Danh sách yêu thích">
+                                        <span class="js-number-like number-like">0</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <a href="#" class="cart js-call-minicart" data-original-title="Giỏ hàng" data-tooltip="tooltip">
+                                        <img width="20" height="20" src="//theme.hstatic.net/1000185342/1000830674/14/shopping-cart.svg?v=20" alt="Giỏ hàng">
+                                        <span class="js-number-cart number-cart">1</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+    <div class="banner">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="/img/bannerTrangChu.png" style="width:100%">
+                        <div class="text">Ý nghĩa</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="/img/banner2.jpg" style="width:100%">
+                        <div class="text">Tinh tế</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="/img/banner3.jpg" style="width:100%; height: auto;">
+                        <div class="text">Đa dạng</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="/img/banner4.jpg" style="width:100%; height: auto;">
+                        <div class="text">Sắc sảo</div>
+                    </div>
+                    
+                </div>
+                    <br>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                </div>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex =1}    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 3000); // Change image every 2 seconds
+                    }
+                </script>
+        <h1>  Top sản phẩm</h1>
+    </div>
+    <div class="content">
+       
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><a href="sanpham1.html"><img src="../img/sp1.png" alt=""></a></h3>
+                    <h1><a href="sanpham1.html" style="color:rgb(3, 3, 3)">1$</a></h1>
+                    <h1><a href="sanpham1.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Hộp Quà Lưu Niệm</i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham2.html"><img src="../img/sp2.png" alt=""></a></h3>
+                    <h1><a href="sanpham2.html" style="color:rgb(3, 3, 3)">1.99$</a></h1>
+                    <h1><a href="sanpham2.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Đèn Dầu</i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham3.html"><img src="../img/sp3.png" alt=""></a></h3>
+                    <h1><a href="sanpham3.html" style="color:rgb(3, 3, 3)">2.99$</a></h1>
+                    <h1><a href="sanpham3.html" style="color:rgb(3, 3, 3)">
+                        
+                        <i style="text-shadow: 1px 1px 1px gray;">Gạt Tàn Thuốc</i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham4.html"></a><img src="../img/sp4.png" alt=""></h3>
+                    <h1><a href="sanpham4.html" style="color:rgb(3, 3, 3)">1.99$</a></h1>
+                    <h1><a href="sanpham4.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Đèn Treo Tường </i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham5.html"></a><img src="../img/sp5.png" alt=""></h3>
+                    <h1><a href="sanpham5.html" style="color:rgb(3, 3, 3)">0.49$</a></h1>
+                    <h1><a href="sanpham5.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Sổ Note</i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham6.html"></a><img src="../img/sp6.png" alt=""></h3>
+                    <h1><a href="sanpham6.html" style="color:rgb(3, 3, 3)">1.99$</a></h1>
+                    <h1><a href="sanpham6.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Đèn Pha Lê</i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham7.html"></a><img src="../img/sp7.png" alt=""></h3>
+                    <h1><a href="sanpham7.html" style="color:rgb(3, 3, 3)">0.99$</a></h1>
+                    <h1><a href="sanpham7.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Bể cá ti vi cũ</i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham8.html"></a><img src="../img/sp8.png" alt=""></h3>
+                    <h1><a href="sanpham8.html" style="color:rgb(3, 3, 3)">99.99$</a></h1>
+                    <h1><a href="sanpham8.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Giá Treo Cây</i>
+                    </a></h1>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="sanpham9.html"></a><img src="../img/sp9.png" alt=""></h3>
+                    <h1><a href="sanpham9.html" style="color:rgb(3, 3, 3)">99.99$</a></h1>
+                    <h1><a href="sanpham9.html" style="color:rgb(3, 3, 3)">
+                        <i style="text-shadow: 1px 1px 1px gray;">Kỳ Lân Sắt</i>
+                    </a></h1>
+                </div>
+            </div>
+    </div>
+    <footer>
+        Địa chỉ: 12 Nguyen Van Bao <br>
+        Phone: 19001009 <br>
+        Mail:trilishop@gmail.com <br>
+        Product By Nguyễn Công Trí & Nguyễn Thị Hằng Ly
+    </footer>
+    
+</body>
+</html>
